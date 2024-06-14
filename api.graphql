@@ -1,0 +1,3 @@
+mutation StageTransaction($tx: String!) {
+    stageTransaction(payload: $tx)
+}
