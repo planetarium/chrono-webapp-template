@@ -6,7 +6,7 @@
     "build": "graphql-codegen && tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "codegen": "graphql-codegen"
+    "codegen": "graphql-codegen --config ./graphql/mimir/codegen.yaml && graphql-codegen --config ./graphql/headless/codegen.yaml"
   },
   "devDependencies": {
     "@graphql-codegen/cli": "^5.0.2",
